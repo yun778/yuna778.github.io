@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>B_film</title>
+    <style>
+        body {
+            font-family: "KopubWorld돋움체";
+        }
+
+        #grid {
+            border: 5px solid #C5AD79;
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        } /*-추후 iframe 양식을 grid 양식으로 변경예정*/
+
+        ul {
+            background-color: #C5AD79;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <p style="font-size: 70%"><a href="/index.html">
+            < Back to home </a>
+                <br>
+                <header>
+                    <center>
+                        <h1>&lt; B급 영화 &gt;</h1>
+                        <h3>&num;B-film &num;fun &num;movies</h3>
+                    </center>
+                </header>
+                    <ul>
+                        <span>
+                            <a href="./hw04_intro.html" target="if_a">B급 영화란?</a> |
+                        </span>
+                        <span>
+                            <a href="./hw04_movie.html" target="if_a">추천 B급 영화</a> |
+                        </span>
+                        <span>
+                            <a href="./hw04_review.html" target="if_b">감상평</a>
+                        </span>
+                    </ul>
+                <iframe src="./hw04_basic.html" width="47%" height=600 name="if_a" frameborder="1"></iframe>
+                <iframe src="./hw04_basic.html" width="47%" height=600 name="if_b" frameborder="1"></iframe>
+                <div style="position: fixed; bottom: 10px; right: 20px">
+                    <a href="#top"><img src="/img/top.png" width="40" height="40" title="위로 가기"></a>
+                </div>
+</body>
