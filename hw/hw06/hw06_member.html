@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> hw06 </title>
+    <style>
+        * {
+            font-family: "KopubWorld돋움체";
+        }
+
+        .Form {
+            display: grid;
+            grid-template-columns: [labels] auto [controls] 1fr;
+            grid-auto-flow: row;
+            grid-gap: 10px;
+            background: rgb(215, 250, 252);
+            padding: 10px;
+            width: 80%;
+            box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+        }
+
+        .Form>label,
+        .Form>fieldset {
+            grid-column: labels;
+            grid-row: auto;
+            text-align: left;
+        }
+
+        .Form>input,
+        .Form>select,
+        .Form>textarea {
+            grid-column: controls;
+            grid-row: auto;
+            padding: 6px;
+            border: 0;
+        }
+
+        .Form>fieldset,
+        .Form>button {
+            grid-column: span 2;
+        }
+
+        div.button {
+            padding: 10px;
+            border: 1px hidden;
+        }
+        
+        a:link {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: navy;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rebeccapurple;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: rgb(158, 69, 146);
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <p style="font-size: 70%"><a href="/index.html">
+            < Back to home </a><br></p>
+    <p style="font-size: 70%"><a href="./hw06.html">
+            < Back to previous page </a><br></p>
+    <br>
+    <center>
+        <div id="logo">
+            <img src="./img/FFF.PNG" width="10%" height="10%">
+        </div>
+    </center>
+    <center>
+        <form class="Form">
+            <label>이름 </label>
+            <input type="text" name="customer_name" id="customer_name" required>
+
+            <label for="phone_number">전화번호 </label>
+            <input type="tel" name="phone_number" id="phone_number" required>
+
+            <label for="email_address">이메일주소 </label>
+            <input type="email" name="email_address" id="email_address">
+
+            <fieldset>
+                <legend>생년월일</legend>
+                <input type="date" name="생년월일" id="생년월일" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>ID 및 비밀번호 설정</legend>
+                <p>
+                    ID : &nbsp;<input type="text" name="ID" size="30" required>
+                </p>
+                <p>
+                    PW : <input type="password" name="psw" size="30" placeholder="비밀번호를 입력하세요" required>
+                </p>
+                <p>
+                    PW : <input type="password" name="psw" size="30" placeholder="비밀번호를 다시 한번 입력하세요" required>
+                </p>
+            </fieldset>
+
+            <!-- <fieldset>
+            <legend>결제수단</legend>
+            <label> <input type="radio"> BC카드 </label>
+            <label> <input type="radio"> KB국민카드
+            </label>
+            <label> <input type="radio"> 신한카드 </label>
+            <label> <input type="radio"> 삼성카드 </label>
+            <label> <input type="radio"> 현대카드 </label>
+        </fieldset>-->
+            <fieldset>
+                <legend>광고 및 홍보 메세지 수신 동의 </legend>
+                <p>광고 및 홍보 메세지를 수신하시겠습니까?</p>
+                <label> <input type="radio" name="ads" id="ads"> 예 </label>
+                <label> <input type="radio" name="ads" id="ads"> 아니오 </label>
+                <p>21시 이후 홍보 알람을 수신하시겠습니까?</p>
+                <label> <input type="radio" name="ads" id="ads"> 예 </label>
+                <label> <input type="radio" name="ads" id="ads"> 아니오 </label>
+            </fieldset>
+
+            <div class="button">
+                <input type="submit" value="전송">
+                <input type="reset" value="다시작성">
+            </div>
+
+        </form>
+    </center>
+    <div style="position: fixed; bottom: 10px; right: 20px">
+        <a href="#top"><img src="/img/top.png" width="40" height="40" title="위로 가기"></a>
+    </div>
+    <br><br><br><br><br>
+</body>
+
+</html>

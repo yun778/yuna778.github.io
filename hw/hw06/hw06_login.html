@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> hw06 </title>
+    <style>
+        * {
+            font-family: "KopubWorld돋움체";
+        }
+        form {
+            background: rgb(215, 250, 252);
+            width: 400px;
+            margin: 0 auto;
+            padding: 40px;
+
+        }
+
+        fieldset {
+            grid-column: labels;
+            grid-row: auto;
+        }
+
+        div.button {
+            padding: 10px;
+            border: 1px hidden;
+        }
+
+        legend {
+            font-weight: bold;
+            font-size: 120%;
+        }
+
+        a:link {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: navy;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rebeccapurple;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: rgb(158, 69, 146);
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <p style="font-size: 70%"><a href="/index.html">
+            < Back to home </a><br></p>
+    <p style="font-size: 70%"><a href="./hw06.html">
+            < Back to previous page </a><br></p>
+    <br>
+    <center>
+        <div id="logo">
+            <img src="./img/FFF.PNG" width="10%" height="10%">
+        </div>
+    </center>
+
+    <section>
+        <form>
+            <fieldset>
+                <legend>ID 및 비밀번호 입력</legend>
+                <p>
+                    ID : &nbsp;<input type="text" name="ID" size="30" required>
+                </p>
+                <p>
+                    PW : <input type="password" name="psw" size="30" placeholder="비밀번호를 입력하세요" required>
+                </p>
+            </fieldset>
+            <p></p>
+            <br>
+            <div class="button">
+                <input type="submit" value="전송">
+                <input type="reset" value="다시작성">
+                <input type="button" value="회원가입" onClick="location.href='./hw06_member.html'">
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>
