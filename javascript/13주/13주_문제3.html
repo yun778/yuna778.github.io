@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#flower").hide();
+            
+            $("#slide").click(function () {
+                $("#flower").slideToggle();
+            });
+        });
+    </script>
+    <style>
+        .thumbnail {
+            background-color: gray;
+            margin: 10px;
+            width: 150px;
+            height: 150px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="thumbnail" style="background-image:url('./img/flower.jpg')"></div>
+    <button id="slide">큰 이미지 보기/닫기</button>
+    <br>
+    <br><br>
+    <img id="flower" src="./img/flower.jpg" />
+</body>
+
+</html>
